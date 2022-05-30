@@ -23,6 +23,8 @@
 		F7643E212844827300BA0430 /* Travel_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E202844827300BA0430 /* Travel_AppTests.swift */; };
 		F7643E2B2844827300BA0430 /* Travel_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E2A2844827300BA0430 /* Travel_AppUITests.swift */; };
 		F7643E2D2844827300BA0430 /* Travel_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E2C2844827300BA0430 /* Travel_AppUITestsLaunchTests.swift */; };
+		F7C9E86128451E8800E09B08 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9E86028451E8800E09B08 /* ReviewTableViewCell.swift */; };
+		F7C9E86328451EA800E09B08 /* GaleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9E86228451EA800E09B08 /* GaleryCollectionViewCell.swift */; };
 		F7F705AE2844AAFE00D3D819 /* FetchImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705AD2844AAFE00D3D819 /* FetchImageURL.swift */; };
 		F7F705B02844AC9C00D3D819 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705AF2844AC9C00D3D819 /* Utils.swift */; };
 		F7F705B62845042800D3D819 /* MenuCollectionViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705B52845042800D3D819 /* MenuCollectionViewCellController.swift */; };
@@ -68,6 +70,8 @@
 		F7643E262844827300BA0430 /* Travel AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travel AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7643E2A2844827300BA0430 /* Travel_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_AppUITests.swift; sourceTree = "<group>"; };
 		F7643E2C2844827300BA0430 /* Travel_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7C9E86028451E8800E09B08 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		F7C9E86228451EA800E09B08 /* GaleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7F705AD2844AAFE00D3D819 /* FetchImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageURL.swift; sourceTree = "<group>"; };
 		F7F705AF2844AC9C00D3D819 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F7F705B52845042800D3D819 /* MenuCollectionViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCellController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				F75513CF2844A0EF007CF940 /* PopularView.swift */,
 				F7F705AD2844AAFE00D3D819 /* FetchImageURL.swift */,
 				F7F705B72845154A00D3D819 /* PlacesTableViewCell.swift */,
+				F7C9E86028451E8800E09B08 /* ReviewTableViewCell.swift */,
+				F7C9E86228451EA800E09B08 /* GaleryCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,9 +337,11 @@
 				F7F705B62845042800D3D819 /* MenuCollectionViewCellController.swift in Sources */,
 				F7643E0E2844827100BA0430 /* HomeViewController.swift in Sources */,
 				F75513D52844A7C1007CF940 /* DataDummies.swift in Sources */,
+				F7C9E86328451EA800E09B08 /* GaleryCollectionViewCell.swift in Sources */,
 				F75513D02844A0EF007CF940 /* PopularView.swift in Sources */,
 				F75513C8284483BA007CF940 /* MyProfileViewController.swift in Sources */,
 				F7643E0A2844827100BA0430 /* AppDelegate.swift in Sources */,
+				F7C9E86128451E8800E09B08 /* ReviewTableViewCell.swift in Sources */,
 				F7F705AE2844AAFE00D3D819 /* FetchImageURL.swift in Sources */,
 				F7F705B82845154A00D3D819 /* PlacesTableViewCell.swift in Sources */,
 				F7F705B02844AC9C00D3D819 /* Utils.swift in Sources */,

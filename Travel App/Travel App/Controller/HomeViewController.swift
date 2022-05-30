@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var imageUser: UIImageView!
     
     struct PropertyKeys {
+        static let placesCell = "PlacesCell"
         static let showPlacesDetail = "ShowPlacesDetail"
     }
     
@@ -79,7 +80,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "PlacesCell", for: indexPath) as? PlacesTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: PropertyKeys.placesCell, for: indexPath) as? PlacesTableViewCell {
             
             let place = placesSpace.places[indexPath.row]
             cell.placeName?.text = place.name

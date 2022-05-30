@@ -27,4 +27,21 @@ class FetchImageURL{
         })
     }
     
+    func setDetailImageToImageView(imageContainer: UIImageView, imageUrl: String) {
+        FetchData().fetchImage(from: imageUrl, completionHandler: { (imageData) in
+            if let data = imageData {
+                // referenced imageView from main thread
+                // as iOS SDK warns not to use images from
+                // a background thread
+                DispatchQueue.main.async {
+                    imageContainer.image = UIImage(data: data)
+                    DetailViewController.init().setImageRounded(imageContainer)
+                }
+            } else {
+                // show as an alert if you want to
+                print("Error loading image");
+            }
+        })
+    }
+    
 }
