@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F75513C8284483BA007CF940 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513C7284483B9007CF940 /* MyProfileViewController.swift */; };
+		F75513CE28449F3D007CF940 /* PopularContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75513CD28449F3D007CF940 /* PopularContentView.xib */; };
+		F75513D02844A0EF007CF940 /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513CF2844A0EF007CF940 /* PopularView.swift */; };
+		F75513D22844A5A5007CF940 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D12844A5A5007CF940 /* PlacesViewController.swift */; };
+		F75513D52844A7C1007CF940 /* DataDummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D42844A7C1007CF940 /* DataDummies.swift */; };
+		F75513D72844A7E7007CF940 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D62844A7E7007CF940 /* Entities.swift */; };
+		F75513D92844A801007CF940 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D82844A801007CF940 /* FetchData.swift */; };
 		F7643E0A2844827100BA0430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E092844827100BA0430 /* AppDelegate.swift */; };
 		F7643E0C2844827100BA0430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E0B2844827100BA0430 /* SceneDelegate.swift */; };
 		F7643E0E2844827100BA0430 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E0D2844827100BA0430 /* HomeViewController.swift */; };
@@ -17,6 +23,11 @@
 		F7643E212844827300BA0430 /* Travel_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E202844827300BA0430 /* Travel_AppTests.swift */; };
 		F7643E2B2844827300BA0430 /* Travel_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E2A2844827300BA0430 /* Travel_AppUITests.swift */; };
 		F7643E2D2844827300BA0430 /* Travel_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7643E2C2844827300BA0430 /* Travel_AppUITestsLaunchTests.swift */; };
+		F7F705AE2844AAFE00D3D819 /* FetchImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705AD2844AAFE00D3D819 /* FetchImageURL.swift */; };
+		F7F705B02844AC9C00D3D819 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705AF2844AC9C00D3D819 /* Utils.swift */; };
+		F7F705B62845042800D3D819 /* MenuCollectionViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705B52845042800D3D819 /* MenuCollectionViewCellController.swift */; };
+		F7F705B82845154A00D3D819 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705B72845154A00D3D819 /* PlacesTableViewCell.swift */; };
+		F7F705BA2845181C00D3D819 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F705B92845181C00D3D819 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,12 @@
 
 /* Begin PBXFileReference section */
 		F75513C7284483B9007CF940 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		F75513CD28449F3D007CF940 /* PopularContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularContentView.xib; sourceTree = "<group>"; };
+		F75513CF2844A0EF007CF940 /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		F75513D12844A5A5007CF940 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		F75513D42844A7C1007CF940 /* DataDummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDummies.swift; sourceTree = "<group>"; };
+		F75513D62844A7E7007CF940 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		F75513D82844A801007CF940 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		F7643E062844827100BA0430 /* Travel App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7643E092844827100BA0430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7643E0B2844827100BA0430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +68,11 @@
 		F7643E262844827300BA0430 /* Travel AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travel AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7643E2A2844827300BA0430 /* Travel_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_AppUITests.swift; sourceTree = "<group>"; };
 		F7643E2C2844827300BA0430 /* Travel_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7F705AD2844AAFE00D3D819 /* FetchImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageURL.swift; sourceTree = "<group>"; };
+		F7F705AF2844AC9C00D3D819 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F7F705B52845042800D3D819 /* MenuCollectionViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCellController.swift; sourceTree = "<group>"; };
+		F7F705B72845154A00D3D819 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		F7F705B92845181C00D3D819 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F75513D32844A70F007CF940 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F75513D42844A7C1007CF940 /* DataDummies.swift */,
+				F75513D62844A7E7007CF940 /* Entities.swift */,
+				F75513D82844A801007CF940 /* FetchData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F75513DA2844A8DF007CF940 /* Based */ = {
+			isa = PBXGroup;
+			children = (
+				F7643E092844827100BA0430 /* AppDelegate.swift */,
+				F7643E0B2844827100BA0430 /* SceneDelegate.swift */,
+			);
+			path = Based;
+			sourceTree = "<group>";
+		};
 		F7643DFD2844827100BA0430 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +142,13 @@
 		F7643E082844827100BA0430 /* Travel App */ = {
 			isa = PBXGroup;
 			children = (
+				F75513DA2844A8DF007CF940 /* Based */,
+				F75513D32844A70F007CF940 /* Model */,
 				F7643E3A2844829F00BA0430 /* View */,
 				F7643E392844828800BA0430 /* Controller */,
-				F7643E092844827100BA0430 /* AppDelegate.swift */,
-				F7643E0B2844827100BA0430 /* SceneDelegate.swift */,
 				F7643E122844827200BA0430 /* Assets.xcassets */,
 				F7643E172844827200BA0430 /* Info.plist */,
+				F7F705AF2844AC9C00D3D819 /* Utils.swift */,
 			);
 			path = "Travel App";
 			sourceTree = "<group>";
@@ -133,6 +175,9 @@
 			children = (
 				F7643E0D2844827100BA0430 /* HomeViewController.swift */,
 				F75513C7284483B9007CF940 /* MyProfileViewController.swift */,
+				F75513D12844A5A5007CF940 /* PlacesViewController.swift */,
+				F7F705B52845042800D3D819 /* MenuCollectionViewCellController.swift */,
+				F7F705B92845181C00D3D819 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +187,10 @@
 			children = (
 				F7643E0F2844827100BA0430 /* Main.storyboard */,
 				F7643E142844827200BA0430 /* LaunchScreen.storyboard */,
+				F75513CD28449F3D007CF940 /* PopularContentView.xib */,
+				F75513CF2844A0EF007CF940 /* PopularView.swift */,
+				F7F705AD2844AAFE00D3D819 /* FetchImageURL.swift */,
+				F7F705B72845154A00D3D819 /* PlacesTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75513CE28449F3D007CF940 /* PopularContentView.xib in Resources */,
 				F7643E162844827200BA0430 /* LaunchScreen.storyboard in Resources */,
 				F7643E132844827200BA0430 /* Assets.xcassets in Resources */,
 				F7643E112844827100BA0430 /* Main.storyboard in Resources */,
@@ -277,10 +327,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75513D22844A5A5007CF940 /* PlacesViewController.swift in Sources */,
+				F7F705B62845042800D3D819 /* MenuCollectionViewCellController.swift in Sources */,
 				F7643E0E2844827100BA0430 /* HomeViewController.swift in Sources */,
+				F75513D52844A7C1007CF940 /* DataDummies.swift in Sources */,
+				F75513D02844A0EF007CF940 /* PopularView.swift in Sources */,
 				F75513C8284483BA007CF940 /* MyProfileViewController.swift in Sources */,
 				F7643E0A2844827100BA0430 /* AppDelegate.swift in Sources */,
+				F7F705AE2844AAFE00D3D819 /* FetchImageURL.swift in Sources */,
+				F7F705B82845154A00D3D819 /* PlacesTableViewCell.swift in Sources */,
+				F7F705B02844AC9C00D3D819 /* Utils.swift in Sources */,
+				F75513D72844A7E7007CF940 /* Entities.swift in Sources */,
+				F75513D92844A801007CF940 /* FetchData.swift in Sources */,
 				F7643E0C2844827100BA0430 /* SceneDelegate.swift in Sources */,
+				F7F705BA2845181C00D3D819 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
