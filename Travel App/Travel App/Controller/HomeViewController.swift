@@ -9,8 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var PlacesTableView: UITableView!
-    @IBOutlet weak var MenuCollectionView: UICollectionView!
+    @IBOutlet weak var placesTableView: UITableView!
+    @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var popularHorizontallyScrollableStackView: UIStackView!
     @IBOutlet weak var popularHorizontallyScrollView: UIScrollView!
     @IBOutlet weak var viewHomeBanner: UIView!
@@ -41,7 +41,7 @@ class HomeViewController: UIViewController {
                     }
                 }
                 
-                self.PlacesTableView.reloadData()
+                self.placesTableView.reloadData()
             }
         }
     }
@@ -54,17 +54,17 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         //set menu collection view
-        MenuCollectionView.dataSource = self
-        MenuCollectionView.reloadData()
+        menuCollectionView.dataSource = self
+        menuCollectionView.reloadData()
         
-        let screenWidth = MenuCollectionView.frame.width
+        let screenWidth = menuCollectionView.frame.width
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: (screenWidth/4)-15, height: (screenWidth/4)-15)
-        MenuCollectionView.collectionViewLayout = layout
+        menuCollectionView.collectionViewLayout = layout
         
         //set places table
-        PlacesTableView.dataSource = self
-        PlacesTableView.reloadData()
+        placesTableView.dataSource = self
+        placesTableView.reloadData()
         
         //set others UI
         popularHorizontallyScrollView.showsHorizontalScrollIndicator = false
@@ -72,6 +72,7 @@ class HomeViewController: UIViewController {
         Utils().setViewRounded(view: self.viewHomeBanner, 0.05)
         Utils().setViewRounded(view: self.viewSubHomeBanner, 0.05)
     }
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -98,7 +99,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = PlacesTableView.indexPathForSelectedRow,
+        if let indexPath = placesTableView.indexPathForSelectedRow,
            segue.identifier == PropertyKeys.showPlacesDetail {
             let detailPlaceViewController = segue.destination as! DetailViewController
 

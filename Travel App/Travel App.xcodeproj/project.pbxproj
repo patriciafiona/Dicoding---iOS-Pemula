@@ -10,7 +10,7 @@
 		F75513C8284483BA007CF940 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513C7284483B9007CF940 /* MyProfileViewController.swift */; };
 		F75513CE28449F3D007CF940 /* PopularContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75513CD28449F3D007CF940 /* PopularContentView.xib */; };
 		F75513D02844A0EF007CF940 /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513CF2844A0EF007CF940 /* PopularView.swift */; };
-		F75513D22844A5A5007CF940 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D12844A5A5007CF940 /* PlacesViewController.swift */; };
+		F75513D22844A5A5007CF940 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D12844A5A5007CF940 /* BookmarksViewController.swift */; };
 		F75513D52844A7C1007CF940 /* DataDummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D42844A7C1007CF940 /* DataDummies.swift */; };
 		F75513D72844A7E7007CF940 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D62844A7E7007CF940 /* Entities.swift */; };
 		F75513D92844A801007CF940 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75513D82844A801007CF940 /* FetchData.swift */; };
@@ -53,7 +53,7 @@
 		F75513C7284483B9007CF940 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		F75513CD28449F3D007CF940 /* PopularContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularContentView.xib; sourceTree = "<group>"; };
 		F75513CF2844A0EF007CF940 /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
-		F75513D12844A5A5007CF940 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		F75513D12844A5A5007CF940 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		F75513D42844A7C1007CF940 /* DataDummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDummies.swift; sourceTree = "<group>"; };
 		F75513D62844A7E7007CF940 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		F75513D82844A801007CF940 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			children = (
 				F7643E0D2844827100BA0430 /* HomeViewController.swift */,
 				F75513C7284483B9007CF940 /* MyProfileViewController.swift */,
-				F75513D12844A5A5007CF940 /* PlacesViewController.swift */,
+				F75513D12844A5A5007CF940 /* BookmarksViewController.swift */,
 				F7F705B52845042800D3D819 /* MenuCollectionViewCellController.swift */,
 				F7F705B92845181C00D3D819 /* DetailViewController.swift */,
 			);
@@ -333,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75513D22844A5A5007CF940 /* PlacesViewController.swift in Sources */,
+				F75513D22844A5A5007CF940 /* BookmarksViewController.swift in Sources */,
 				F7F705B62845042800D3D819 /* MenuCollectionViewCellController.swift in Sources */,
 				F7643E0E2844827100BA0430 /* HomeViewController.swift in Sources */,
 				F75513D52844A7C1007CF940 /* DataDummies.swift in Sources */,

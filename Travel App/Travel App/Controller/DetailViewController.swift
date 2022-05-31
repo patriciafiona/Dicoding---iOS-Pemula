@@ -13,6 +13,8 @@ import CoreLocation
 
 class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+
+    @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var placeLikes: UILabel!
     @IBOutlet weak var bookmarkButtonContainer: UIView!
     @IBOutlet weak var placeInfoContainer: UIView!
@@ -28,9 +30,13 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     
     var place: Places?
     var didLayout = false
+    var isBookmarked = false
+    
+    let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkIsBookmarked()
         setDisplayData()
         setMap()
         
@@ -42,7 +48,47 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         mapKitView.isHidden = true
         
         Utils().setViewRoundedShadow(placeInfoContainer, 0.05)
-        Utils().setViewRoundedShadow(bookmarkButtonContainer, 0.05)
+        Utils().setViewRoundedShadow(bookmarkButtonContainer, 0.2)
+    }
+    
+    @IBAction func onBookmarkClick(_ sender: UIButton) {
+        setBookmarkData()
+    }
+    
+    private func checkIsBookmarked(){
+        let placeId = place!.id as Int
+        let myBookmarks = userDefaults.object(forKey: "myBookmarks") as? [Int]
+        
+        if(myBookmarks != nil){
+            isBookmarked = myBookmarks!.contains(placeId)
+        }
+        
+        if(isBookmarked){
+            bookmarkButton.tintColor = UIColor.red
+        }else{
+            bookmarkButton.tintColor = UIColor.lightGray
+        }
+    }
+    
+    private func setBookmarkData(){
+        var updatedData = [Int]()
+        let placeId = place!.id as Int
+        let myBookmarks = userDefaults.object(forKey: "myBookmarks") as? [Int]
+        
+        if(myBookmarks != nil){
+            if myBookmarks!.contains(placeId) {
+                //remove bookmark
+                updatedData = myBookmarks!.filter { $0 != placeId }
+            }else{
+                //add bookmark
+                updatedData = myBookmarks!
+                updatedData += [placeId]
+            }
+        }else{
+            updatedData = [placeId]
+        }
+        userDefaults.set(updatedData, forKey: "myBookmarks")
+        checkIsBookmarked()
     }
     
     override func viewWillLayoutSubviews() {
