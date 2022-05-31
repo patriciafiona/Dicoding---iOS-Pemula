@@ -13,6 +13,9 @@ import CoreLocation
 
 class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    @IBOutlet weak var placeLikes: UILabel!
+    @IBOutlet weak var bookmarkButtonContainer: UIView!
+    @IBOutlet weak var placeInfoContainer: UIView!
     @IBOutlet weak var placeImage: UIImageView!
     @IBOutlet weak var gradientTranparent: UIImageView!
     @IBOutlet weak var placeName: UILabel!
@@ -37,6 +40,9 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         reviewTableView.isHidden = false
         galeryCollectionView.isHidden = true
         mapKitView.isHidden = true
+        
+        Utils().setViewRoundedShadow(placeInfoContainer, 0.05)
+        Utils().setViewRoundedShadow(bookmarkButtonContainer, 0.05)
     }
     
     override func viewWillLayoutSubviews() {
@@ -76,6 +82,9 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
             placeAddress.text = place?.address
             placeDetail.text = place?.description
             
+            let likes = place?.like!
+            placeLikes.text = "\(likes ?? 0)"
+            
             FetchImageURL().setDetailImageToImageView(imageContainer: placeImage, imageUrl: "\(String(describing: data.image))")
             setImageRounded(gradientTranparent)
         }
@@ -85,7 +94,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         let rectShape = CAShapeLayer()
         rectShape.bounds = obj.frame
         rectShape.position = obj.center
-        rectShape.path = UIBezierPath(roundedRect: obj.bounds, byRoundingCorners: [.bottomRight], cornerRadii: CGSize(width: 50, height: 50)).cgPath
+        rectShape.path = UIBezierPath(roundedRect: obj.bounds, byRoundingCorners: [.allCorners], cornerRadii: CGSize(width: 30, height: 30)).cgPath
         obj.layer.mask = rectShape
     }
     
