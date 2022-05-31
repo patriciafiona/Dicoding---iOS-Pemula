@@ -17,7 +17,7 @@ class Utils{
         view.clipsToBounds = true
     }
     
-    func setViewRoundedShadow(_ view: UIView, _ roundPercentage: Double){
+    func setViewRoundedShadow(_ view: UIView, _ roundPercentage: Double) {
         // corner radius
         view.layer.cornerRadius = view.frame.size.width * roundPercentage
 

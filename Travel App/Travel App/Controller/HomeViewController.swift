@@ -27,8 +27,8 @@ class HomeViewController: UIViewController {
     }
     
     private let url = "https://tourism-api.dicoding.dev/list"
-    var placesSpace = APIData(){
-        didSet{
+    var placesSpace = APIData() {
+        didSet {
             DispatchQueue.main.async {
                 [self] in
                 let filteredPopularData = placesSpace.places.filter {

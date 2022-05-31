@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PopularView: UIView{
+class PopularView: UIView {
     @IBOutlet weak var placeName: UILabel!
     @IBOutlet weak var placeDetail: UILabel!
     @IBOutlet weak var container: UIView!

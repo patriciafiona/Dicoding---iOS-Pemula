@@ -55,7 +55,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         setBookmarkData()
     }
     
-    private func checkIsBookmarked(){
+    private func checkIsBookmarked() {
         let placeId = place!.id as Int
         let myBookmarks = userDefaults.object(forKey: "myBookmarks") as? [Int]
         
@@ -70,7 +70,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         }
     }
     
-    private func setBookmarkData(){
+    private func setBookmarkData() {
         var updatedData = [Int]()
         let placeId = place!.id as Int
         let myBookmarks = userDefaults.object(forKey: "myBookmarks") as? [Int]
@@ -107,7 +107,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         setImageRounded(placeImage)
     }
     
-    private func setMap(){
+    private func setMap() {
         let location = CLLocationCoordinate2D(latitude: (place?.latitude)!,
                                               longitude: (place?.longitude)!)
             
@@ -122,7 +122,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         mapKitView.addAnnotation(annotation)
     }
     
-    private func setDisplayData(){
+    private func setDisplayData() {
         if let data = place {
             placeName.text = place?.name
             placeAddress.text = place?.address
@@ -136,7 +136,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         }
     }
     
-    func setImageRounded(_ obj: AnyObject){
+    func setImageRounded(_ obj: AnyObject) {
         let rectShape = CAShapeLayer()
         rectShape.bounds = obj.frame
         rectShape.position = obj.center

@@ -7,19 +7,19 @@
 
 import UIKit
 
-struct APIData: Decodable{
+struct APIData: Decodable {
     var error: Bool = false
     var message: String = ""
     var count: Int = 0
     var places: [Places] = [Places]()
 }
 
-struct Menu: Decodable{
+struct Menu: Decodable {
     var id: Int
     var name: String
 }
 
-struct Places: Decodable{
+struct Places: Decodable {
     let id: Int
     let name: String
     let description: String?
@@ -38,7 +38,7 @@ struct Review {
     let description: String
 }
 
-struct Galery{
+struct Galery {
     let placeID: Int
     let placeImage: String
 }
