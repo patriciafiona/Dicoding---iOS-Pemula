@@ -7,6 +7,10 @@
 
 import UIKit
 
+class MyPopularTapGesture: UITapGestureRecognizer {
+    var placeId = Int()
+}
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var placesTableView: UITableView!
@@ -37,6 +41,13 @@ class HomeViewController: UIViewController {
                         FetchImageURL().setImageToImageView(imageContainer: popularView.placeImage, imageUrl: "\(String(describing: place.image))")
                         popularView.placeName.text = place.name
                         popularView.placeDetail.text = place.description
+                        
+                        let tapGesture = MyPopularTapGesture(target: self, action: #selector(HomeViewController.popularTapGesture(sender:)))
+
+                        popularView.container.addGestureRecognizer(tapGesture)
+                        popularView.container.isUserInteractionEnabled = true
+                        tapGesture.placeId = place.id
+                        
                         self.popularHorizontallyScrollableStackView.addArrangedSubview(popularView)
                     }
                 }
@@ -44,6 +55,19 @@ class HomeViewController: UIViewController {
                 self.placesTableView.reloadData()
             }
         }
+    }
+    
+    @objc func popularTapGesture(sender : MyPopularTapGesture) {
+        let detailPage = self.storyboard?.instantiateViewController(withIdentifier: "detailView") as! DetailViewController
+        
+        print("Place ID: \(sender.placeId)")
+        
+        let filteredData = placesSpace.places.filter {
+            [sender.placeId].contains($0.id)
+        }
+        
+        detailPage.place = filteredData[0]
+        self.navigationController?.pushViewController(detailPage, animated: true)
     }
     
     override func viewDidLoad() {

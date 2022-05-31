@@ -375,6 +375,8 @@
                         <outlet property="MenuCollectionView" destination="c5I-tI-J9G" id="JJB-DA-a2B"/>
                         <outlet property="PlacesTableView" destination="Rwf-WC-sWh" id="yeX-r0-xxN"/>
                         <outlet property="imageUser" destination="ZYZ-9o-Huc" id="nzc-J4-168"/>
+                        <outlet property="menuCollectionView" destination="c5I-tI-J9G" id="HMf-TE-xST"/>
+                        <outlet property="placesTableView" destination="Rwf-WC-sWh" id="CyT-Ml-aXO"/>
                         <outlet property="popularHorizontallyScrollView" destination="bbx-3u-uRJ" id="hJO-hI-HfH"/>
                         <outlet property="popularHorizontallyScrollableStackView" destination="DWx-Z4-hjN" id="n53-m7-dgK"/>
                         <outlet property="viewHomeBanner" destination="zit-Ov-Cmg" id="JaV-M3-cYe"/>
