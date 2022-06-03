@@ -24,6 +24,8 @@ Platform              : Mobile - [iOS](https://www.apple.com/id/ios/ios-14/)
 Programming Language  : [Swift](https://developer.apple.com/swift/)
 
 Course link           : [iOS Pemula] (https://www.dicoding.com/academies/171)
+
+Previous repository   : https://github.com/patriciafiona/Dicoding---Belajar-Membuat-Aplikasi-iOS-untuk-Pemula
 ```
 
 ## Results for App 
